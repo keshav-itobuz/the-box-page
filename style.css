@@ -123,6 +123,10 @@ button:hover {
 
 /* reputation section start */
 
+.reputation-section{
+  margin: 0 20px;
+}
+
 .reputation-section > h2 {
   text-align: center;
   margin-top: 30px;
@@ -260,7 +264,7 @@ button:hover {
   padding: 10px 100px 30px 30px;
   border-radius: 4px;
   background: #fff;
-  margin: 20px 40px;
+  margin: 20px 0px;
   box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05),
     0px 12px 16px -4px rgba(17, 24, 39, 0.1);
 }
@@ -636,7 +640,7 @@ h5 {
   .reputation-section-content {
     flex-direction: row;
     justify-content: center;
-    gap: 70px;
+    gap: 50px;
   }
 
   .reputation-section-content > div {
@@ -662,7 +666,7 @@ h5 {
   /* aboutus section start */
 
   .aboutus-section {
-    margin: 100px 0px;
+    margin: 100px 0px 50px 0;
     align-items: normal;
   }
 
@@ -990,6 +994,9 @@ h5 {
   }
   .email {
     flex-direction: row;
+  }
+  .email > input{
+    outline: none;
   }
   /* bottom section end */
 
