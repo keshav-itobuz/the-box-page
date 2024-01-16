@@ -25,10 +25,6 @@ button:hover {
 
 /* Navbar css start */
 
-.navbar {
-  width: 100vw;
-  text-align: center;
-}
 
 .nav-logo {
   display: flex;
@@ -36,7 +32,6 @@ button:hover {
   gap: 10px;
   margin-left: 20px;
 }
-
 .nav-logo > div {
   font-size: 30px;
   font-weight: 700;
@@ -44,22 +39,10 @@ button:hover {
   color: #2947a9;
   padding-top: 5px;
 }
-
-.nav-menu {
-  list-style-type: none;
+.nav-menu{
+  display: none;
 }
 
-.nav-menu > li {
-  border: 0.2px solid;
-  padding: 10px;
-  border-left: 0;
-  border-right: 0;
-}
-
-.nav-menu li a:hover {
-  color: #f9995d;
-  cursor: pointer;
-}
 
 /* Navbar css end */
 
@@ -123,13 +106,12 @@ button:hover {
 
 /* reputation section start */
 
-
 .reputation-section > h2 {
   text-align: center;
   margin-top: 30px;
   font-size: 1.8rem;
   font-weight: 700;
-  text-shadow: 0px 4px 4px;
+  text-shadow: 0px 3px 3px;
   margin-bottom: 30px;
 }
 
@@ -450,9 +432,9 @@ h5 {
 }
 
 .form-feild > textarea {
-  width: 335px;
   padding: 10px;
   outline: none;
+  width: 165px;
 }
 
 .form-section > h6 {
@@ -486,7 +468,7 @@ h5 {
 
 .bottom-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding: 40px 0;
   margin: 0 20px;
@@ -523,7 +505,7 @@ h5 {
 .bottom-section-left > div > div {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .bottom-section-left > a {
   margin-left: 0px;
@@ -538,9 +520,13 @@ h5 {
   flex-direction: column;
   gap: 10px;
 }
-.email > input{
+.email > input {
   outline: none;
 }
+.bottom-section-left > .nav-logo {
+  display: none;
+}
+
 /* bottom-section-end */
 
 /* footer section start */
@@ -555,9 +541,26 @@ h5 {
 
 /* footer-section-end */
 
+
+/*---------------- tablet view---------------- */
+
+@media (min-width: 400px) {
+  .form-feild textarea {
+    width: 335px;
+  }
+  /* bottom section start */
+  .bottom-section {
+    flex-direction: row;
+  }
+  .bottom-section-left > .nav-logo {
+    display: flex;
+  }
+  /* bottom section end */
+}
+
 /* --------------for pc view---------------------------------- */
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   body {
     border-radius: 4px;
   }
@@ -569,8 +572,6 @@ h5 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 60px;
-    gap: 220px;
   }
 
   .nav-menu {
@@ -580,6 +581,22 @@ h5 {
 
   .nav-menu > li {
     border: 0;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+  }
+  
+  .nav-menu > li {
+    border: 0.2px solid;
+    padding: 10px;
+    border-left: 0;
+    border-right: 0;
+  }
+  
+  .nav-menu li a:hover {
+    color: #f9995d;
+    cursor: pointer;
   }
 
   /* Navbar css end */
@@ -617,9 +634,6 @@ h5 {
     height: 40px;
     width: 200px;
     margin-top: 5px;
-  }
-
-  .hero-section-button {
     font-size: 20px;
     padding: 5px 40px;
   }
@@ -641,6 +655,7 @@ h5 {
     flex-direction: row;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 30px;
   }
 
   .reputation-section-content > div {
@@ -673,7 +688,7 @@ h5 {
   .aboutus-section > img {
     position: relative;
     width: 70%;
-    left: 10vw;
+    left: 8vw;
     height: 100%;
   }
 
@@ -688,6 +703,7 @@ h5 {
 
   .aboutus-section-content > p {
     margin-bottom: 40px;
+    font-size: 20px;
   }
 
   .aboutus-section {
@@ -769,7 +785,6 @@ h5 {
     gap: 50px;
     padding: 0px;
   }
-  
 
   .experience-section-right > h3 {
     font-size: 60px;
@@ -855,7 +870,7 @@ h5 {
     justify-content: space-around;
     text-align: left;
     height: 200px;
-    margin: 40px 0;
+    margin: 60px 0;
   }
 
   .advertisment-section-content > h6 {
@@ -902,7 +917,7 @@ h5 {
   }
 
   .project-section {
-    margin: 60px 80px 40px 80px;
+    margin: 60px 80px 60px 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -994,6 +1009,9 @@ h5 {
   }
   .email {
     flex-direction: row;
+  }
+  .bottom-section-left > div > div {
+    gap: 23px;
   }
 
   /* bottom section end */
