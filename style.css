@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
-  overflow-x: hidden;
 }
 
 a {
@@ -22,82 +21,109 @@ button {
 button:hover {
   cursor: pointer;
 }
+ul {
+  list-style: none;
+}
 
-/* Navbar css start */
+/* navbar section start */
 
+.navbar > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.nav-menu {
+  list-style-type: none;
+}
 
 .nav-logo {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-left: 20px;
 }
+
 .nav-logo > div {
   font-size: 30px;
   font-weight: 700;
-  align-items: center;
   color: #2947a9;
   padding-top: 5px;
 }
-.nav-menu{
+.nav-menu {
   display: none;
 }
+.hamburger {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.navbar {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
 
-
-/* Navbar css end */
+/* navbar section end */
 
 /* hero section start */
-
+h1 {
+  font-size: 52px;
+  font-weight: 600;
+  max-width: 400px;
+  position: absolute;
+  bottom: 35%;
+  left: 0%;
+}
 .hero-section {
   background-image: url("images/hero_section/hero.svg");
   background-size: cover;
-}
-
-.hero-text {
-  font-size: 2rem;
-  position: relative;
-  top: 100px;
-  left: 70px;
-  width: 250px;
-  font-weight: 600;
+  height: 100vh;
+  background-position: center;
+  margin-bottom: 50px;
 }
 
 .hero-section-dialogbox {
-  width: 320px;
-  height: 100px;
   background-color: #3559c7;
-  margin-top: 21vh;
-  margin-left: 30px;
-  padding-top: 9px;
-}
-
-.hero-section-dialogbox-content {
-  color: white;
+  max-width: 400px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  padding-top: 20px;
   text-align: center;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.hero-section-button {
-  background-color: rgb(59, 55, 55);
   color: white;
-  height: 30px;
-  width: 175px;
-  margin-top: 10px;
 }
 
 .hero-section-buttons {
   display: flex;
-  gap: 1px;
+  flex-direction: row;
+  gap: 0.8px;
+  justify-content: center;
 }
-
-.hero-section-button {
+.button {
   display: flex;
   flex-direction: row;
-  font-size: 15px;
-  padding: 3px 38px;
+  font-size: 10px;
+  padding: 8px 0;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  background-color: #292e3d;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
 }
 
+.hero-section-dialogbox-content > h6 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.hero-section-dialogbox-content > p {
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 350px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
 .fa-solid {
   margin: 3px 10px;
 }
@@ -108,30 +134,36 @@ button:hover {
 
 .reputation-section > h2 {
   text-align: center;
-  margin-top: 30px;
   font-size: 1.8rem;
   font-weight: 700;
   text-shadow: 0px 3px 3px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  color: #292e3d;
+  -webkit-text-stroke: 2px black;
 }
 
 .reputation-section-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.reputation-section {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
 }
 
 .reputation-section-content > div {
   border: 1px solid grey;
   border-radius: 4px;
   margin-bottom: 10px;
-  margin: 0 20px;
-  padding: 10px 10px;
+  padding: 10px 10px 30px 15px;
 }
 
 .reputation-section-content > div > p {
-  width: 450px;
+  width: 250px;
   color: #858ead;
 }
 
@@ -141,41 +173,45 @@ button:hover {
   margin: 5px 0;
 }
 
-/* reputation section end */
+/* /reputation section end  */
 
-/* aboutus section start */
+/* about section start */
 
-.aboutus-section-content {
+.about-image > img {
+  width: 100%;
+}
+
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.about-us-section > div {
+  display: flex;
+  margin: 30px 0;
+  position: relative;
+  flex-direction: column;
+}
+.about-us-section-content {
   background-color: #2947a9;
   color: white;
   padding: 0 40px;
 }
 
-.aboutus-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 0;
-}
-
-.aboutus-section > img {
-  height: 500px;
-  margin-bottom: 50px;
-}
-
-.aboutus-section-content > h6 {
+.about-us-section-content > h6 {
   font-weight: 700;
-  font-size: 1.8rem;
-  margin-top: 30px;
+  font-size: 36px;
+  margin-top: 40px;
 }
 
-.aboutus-section-content > p {
+.about-us-section-content > p {
   font-weight: 400;
   font-size: 20px;
   margin: 20px 0;
 }
 
-.aboutus-section-content > button {
+.about-us-section-content > button {
   font-weight: 600;
   font-size: 18px;
   color: #2947a9;
@@ -185,7 +221,7 @@ button:hover {
   margin-top: 20px;
 }
 
-/*  about us section end*/
+/* about-us section end */
 
 /* service section start */
 
@@ -193,12 +229,13 @@ button:hover {
   text-align: center;
   margin-bottom: 50px;
   background: #f6f8f7;
+  padding-bottom: 50px;
 }
 
 .service-section > h6 {
   font-weight: 700;
   font-size: 1.8rem;
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -239,6 +276,10 @@ button:hover {
 
 /* experince section start */
 
+.experience-section {
+  margin: 60px 0;
+}
+
 .experience-section-left > div {
   padding: 10px 100px 30px 30px;
   border-radius: 4px;
@@ -251,7 +292,7 @@ button:hover {
 .experience-section-right {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
   margin-top: 50px;
   padding: 0 70px;
 }
@@ -308,6 +349,11 @@ h5 {
 .experience-section {
   margin-bottom: 50px;
 }
+.experience-button {
+  padding: 10px 30px;
+  color: white;
+  background-color: #2947a9;
+}
 
 /* experience section end */
 
@@ -319,7 +365,7 @@ h5 {
   height: 20vh;
   color: white;
   text-align: center;
-  margin: 10px 0;
+  margin: 50px 0;
 }
 
 .advertisment-section-content,
@@ -331,8 +377,9 @@ h5 {
 }
 
 .advertisment-section-button > button {
-  height: 30px;
-  width: 180px;
+  height: 35px;
+  width: 200px;
+  font-size: 16px;
   background-color: transparent;
   color: white;
   border: 0.2px solid white;
@@ -343,7 +390,19 @@ h5 {
   color: black;
   border-color: black;
 }
+.advertisment-section-content > h6 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
 
+.advertisment-section-content > p {
+  font-weight: 400;
+  font-size: 16px;
+}
+.advertisment-section {
+  padding: 10% 0;
+}
 /* advertisment section end */
 
 /* project section start */
@@ -359,7 +418,6 @@ h5 {
 }
 
 .project-left-content > li {
-  border: 0.2px solid black;
   padding: 10px 0;
   border-left: 0;
   border-right: 0;
@@ -395,14 +453,32 @@ h5 {
 }
 
 .project-right-content {
-  height: 60px;
   background-color: #2947a9;
+  margin-top: -9px;
   color: white;
-  margin-top: -5px;
-  padding: 0 20px;
+  padding: 10px 20px;
   margin-bottom: 20px;
 }
-
+.project-left-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: scroll;
+  
+}
+.project-left-content::-webkit-scrollbar {
+  display: none;
+}
+#selected-project {
+  border-left: #2947a9 solid 5px;
+  padding-left: 20px;
+  color: #2947a9;
+}
+.project-section-right-top > div > img,
+.project-section-right-bottom > div >img{
+  max-width:100%
+}
 /* project section end */
 
 /* form section start */
@@ -445,7 +521,7 @@ h5 {
 .form-section > p {
   font-weight: 400;
   font-size: 15px;
-  width: 380px;
+  max-width: 380px;
 }
 
 .form-button {
@@ -466,12 +542,13 @@ h5 {
 
 /* bottom section start */
 
-.bottom-section {
+.bottom-section > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 0;
   margin: 0 20px;
+  gap: 20px;
 }
 
 .bottom-blue-text {
@@ -499,9 +576,10 @@ h5 {
 .bottom-section-left > div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
 }
+
 .bottom-section-left > div > div {
   display: flex;
   flex-direction: column;
@@ -509,10 +587,6 @@ h5 {
 }
 .bottom-section-left > a {
   margin-left: 0px;
-}
-
-.bottom-section-right {
-  gap: 10px;
 }
 
 .email {
@@ -527,6 +601,9 @@ h5 {
   display: none;
 }
 
+.bold-text {
+  font-weight: bold;
+}
 /* bottom-section-end */
 
 /* footer section start */
@@ -536,13 +613,13 @@ h5 {
   color: white;
   font-size: 16px;
   font-weight: 400;
-  padding: 10px 0 10px 50px;
+  padding: 10px 0;
+  padding-left: 8%;
+  margin-top: 10px;
 }
-
 /* footer-section-end */
 
-
-/*---------------- tablet view---------------- */
+/* ----------------------for tablet------------------ */
 
 @media (min-width: 400px) {
   .form-feild textarea {
@@ -558,160 +635,77 @@ h5 {
   /* bottom section end */
 }
 
-/* --------------for pc view---------------------------------- */
+/*----------------------for pc------------------------ */
 
-@media (min-width: 900px) {
-  body {
-    border-radius: 4px;
-  }
-
-  /* Navbar css start */
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
+@media (min-width: 1024px) {
+  /* nav section start */
 
   .nav-menu {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    padding-top: 12px;
   }
 
-  .nav-menu > li {
-    border: 0;
+  .hamburger {
+    display: none;
   }
-  
-  .nav-menu {
-    list-style-type: none;
-  }
-  
-  .nav-menu > li {
-    border: 0.2px solid;
-    padding: 10px;
-    border-left: 0;
-    border-right: 0;
-  }
-  
-  .nav-menu li a:hover {
+  .nav-menu > li > a:hover {
     color: #f9995d;
     cursor: pointer;
   }
 
-  /* Navbar css end */
+  /* nav section end */
 
   /* hero section start */
 
-  .hero {
-    height: 672px;
-  }
-
-  .hero-text {
-    font-size: 4rem;
-    width: 500px;
-    margin-left: 8%;
-    padding-top: 12%;
-  }
-
   .hero-section-dialogbox {
-    position: relative;
-    left: 65%;
-    width: 400px;
-    height: 195px;
+    bottom: 0%;
+    right: 5%;
   }
-
-  .hero-section-dialogbox-content {
-    padding: 10px 30px 20px 30px;
-    font-size: 24px;
+  h1 {
+    font-size: 82px;
+    max-width: 600px;
+    bottom: 35%;
+    left: 8%;
   }
-
-  .hero-section-dialogbox-content > h6 {
-    margin: 10px;
-  }
-
-  .hero-section-button {
-    height: 40px;
-    width: 200px;
-    margin-top: 5px;
-    font-size: 20px;
-    padding: 5px 40px;
-  }
-
-  .fa-solid {
-    margin: 3px 20px;
-  }
-
   /* hero section end */
 
   /* reputation section start */
 
-  .reputation-section > h2 {
-    margin: 50px 0;
-    font-size: 32px;
-  }
-
   .reputation-section-content {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 100%;
     gap: 50px;
-    margin-bottom: 30px;
   }
 
-  .reputation-section-content > div {
-    height: 155px;
-    padding: 10px 20px 0 20px;
-  }
+  /*reputation section end  */
 
-  .reputation-section-content > div > p {
-    width: 280px;
-    font-weight: 400;
-    font-size: 16px;
-  }
+  /* about us section start */
 
-  .reputation-section-content > div > h6 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
-  /* reputation section end */
-
-  /* aboutus section start */
-
-  .aboutus-section {
-    margin: 100px 0px 50px 0;
-    align-items: normal;
-  }
-
-  .aboutus-section > img {
-    position: relative;
-    width: 70%;
-    left: 8vw;
-    height: 100%;
-  }
-
-  .aboutus-section-content {
-    position: absolute;
-    width: 480px;
-    left: 59vw;
-    margin-top: 50px;
-    padding-top: 30px;
-    border-radius: 4px;
-  }
-
-  .aboutus-section-content > p {
-    margin-bottom: 40px;
-    font-size: 20px;
-  }
-
-  .aboutus-section {
+  .about-us-section > div {
     flex-direction: row;
-    margin-top: 50px;
+    width: 83%;
+  }
+  .about-us-section {
+    position: relative;
+    margin-bottom: 60px;
+  }
+  .about-us-section-content {
+    position: absolute;
+    left: 60%;
+    top: 12%;
+    max-width: 500px;
+    background-color: #2947a9;
+    padding: 0 40px;
+    gap: 0px;
+  }
+  .about-us-section-content > button {
+    margin-bottom: 80px;
   }
 
-  /* aboutus section end */
+  /* about-us section end */
 
   /* service section begins */
 
@@ -755,7 +749,7 @@ h5 {
     width: 80px;
   }
 
-  /* service-section end */
+  /* service section hidden */
 
   /* experience section start */
 
@@ -870,17 +864,15 @@ h5 {
     justify-content: space-around;
     text-align: left;
     height: 200px;
-    margin: 60px 0;
+    margin: 50px 0 30px 0;
+    padding: 0;
   }
 
   .advertisment-section-content > h6 {
-    font-weight: 700;
     font-size: 32px;
-    margin-bottom: 10px;
   }
 
   .advertisment-section-content > p {
-    font-weight: 400;
     font-size: 20px;
   }
 
@@ -905,15 +897,9 @@ h5 {
 
   .project-left-content > li {
     border: none;
-    padding-left: 10px;
-    margin: 20px;
+    padding-left: 20px;
     font-weight: 400;
     font-size: 18px;
-  }
-
-  #selected-project {
-    border-left: #2947a9 solid 2px;
-    color: #2947a9;
   }
 
   .project-section {
@@ -942,11 +928,10 @@ h5 {
   }
 
   .project-right-content {
-    height: 60px;
     background-color: #2947a9;
     color: white;
-    margin-top: -5px;
-    padding: 0px 20px;
+    margin-top: -9px;
+    padding: 10px 20px;
     margin-bottom: 20px;
   }
 
@@ -955,6 +940,10 @@ h5 {
     display: flex;
     flex-direction: row;
     gap: 20px;
+  }
+  .project-left-content {
+    flex-direction: column;
+    gap: 0px;
   }
 
   /* project section end */
@@ -996,29 +985,29 @@ h5 {
 
   /* bottom section start */
 
+  .bottom-section > div {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+    width: 80%;
+  }
+  .bottom-section {
+    display: flex;
+    justify-content: center;
+  }
+  .bottom-section-left > .nav-logo {
+    display: flex;
+  }
   .bottom-section-left,
   .bottom-section-right {
-    gap: 20px;
     font-size: 20px;
   }
-
-  .bottom-section {
-    margin: 0 50px;
-    justify-content: center;
-    gap: 400px;
+  .bottom-section-right {
+    gap: 20px;
   }
   .email {
     flex-direction: row;
   }
-  .bottom-section-left > div > div {
-    gap: 23px;
-  }
 
   /* bottom section end */
-
-  .footer-section {
-    font-size: 16px;
-    font-weight: 400;
-    padding: 20px 130px;
-  }
 }

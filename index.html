@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Box Model</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <!-- navigation bar start -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>the box page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <section class="navbar">
+<body>
+  <!-- nav section start -->
+
+  <section class="navbar">
+    <div>
       <a class="nav-logo">
         <img src="images/logos/company.svg" alt="logo" />
         <div><i>The</i> Box</div>
@@ -40,285 +38,263 @@
           <a href="#" target="_blank">Contact Us</a>
         </li>
       </ul>
-    </section>
+      <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+    </div>
+  </section>
 
-    <!-- navigation bar end -->
+  <!-- nav section end -->
 
-    <!-- hero section start -->
+  <!-- hero section start -->
 
-    <section class="hero-section">
-      <h1 class="hero-text">Building things is our mission.</h1>
-      <div class="hero-section-dialogbox">
-        <div class="hero-section-dialogbox-content">
-          <h6 style="padding-bottom: 10px; font-size: 20px; font-weight: 700">
-            Feature Project
-          </h6>
-          <p>The National University of Architecture</p>
-        </div>
-        <div class="hero-section-buttons">
-          <button class="hero-section-button">
-            <i class="fa-solid fa-arrow-left"></i>
-            <p>Back</p>
-          </button>
-          <button class="hero-section-button">
-            <p>Next</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
+  <section class="hero-section">
+    <h1 class="hero-text">Building things is our mission.</h1>
+    <div class="hero-section-dialogbox">
+      <div class="hero-section-dialogbox-content">
+        <h6 style="padding-bottom: 10px; font-size: 20px; font-weight: 700">
+          Feature Project
+        </h6>
+        <p>The National University of Architecture</p>
+      </div>
+      <div class="hero-section-buttons">
+        <button class="button">
+          <i class="fa-solid fa-arrow-left"></i>
+          <p>Back</p>
+        </button>
+        <button class="button">
+          <p>Next</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- hero section end -->
+
+  <!-- reputation section start -->
+
+  <section class="reputation-section">
+    <h2>Our Reputation</h2>
+    <section class="reputation-section-content">
+      <div>
+        <img src="images\reputation-section\headphone.svg" alt="headphone" />
+        <h6>Best Services</h6>
+        <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum</p>
+      </div>
+      <div>
+        <img src="images\reputation-section\headphone.svg" alt="headphone" />
+        <h6>Best Teams</h6>
+        <p>Cursus semper tellus volutpat aliquet lacus.</p>
+      </div>
+      <div>
+        <img src="images\reputation-section\pencil.svg" alt="pencil" />
+        <h6>Best Designs</h6>
+        <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
       </div>
     </section>
+  </section>
+  <!--reputation section end  -->
 
-    <!-- hero section end -->
+  <!-- about-us section start -->
 
-    <!-- reputation section start -->
-
-    <section class="reputation-section">
-      <h2>Our Reputation</h2>
-      <section class="reputation-section-content">
-        <div>
-          <img src="images\reputation-section\headphone.svg" alt="headphone" />
-          <h6>Best Services</h6>
-          <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum</p>
-        </div>
-        <div>
-          <img src="images\reputation-section\headphone.svg" alt="headphone" />
-          <h6>Best Teams</h6>
-          <p>Cursus semper tellus volutpat aliquet lacus.</p>
-        </div>
-        <div>
-          <img src="images\reputation-section\pencil.svg" alt="pencil" />
-          <h6>Best Designs</h6>
-          <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
-        </div>
-      </section>
-    </section>
-    <!--reputation section end  -->
-
-    <!-- aboutus section start -->
-
-    <section class="about-us-section">
-      <img src="images\aboutus-section\owner.svg" alt="man" />
-      <div class="aboutus-section-content">
+  <section class="about-us-section">
+    <div>
+      <div class="about-image">
+        <img src="images\about-us-section\owner.svg" alt="man" />
+      </div>
+      <div class="about-us-section-content">
         <h6>About us</h6>
         <p>
           For more than 30 years we have been delivering world-class
-          construction and we've built many lasting relationships along the way.
+          construction and we've built many lasting relationships along the
+          way.
         </p>
         <p>
           We've matured into an industry leader and trusted resource for those
-          seeking quality, innovation and reliability when building in the U.S.
+          seeking quality, innovation and reliability when building in the
+          U.S.
         </p>
         <button>More on Our History</button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- about us section end -->
+  <!-- about us section end -->
 
-    <!-- service section start -->
+  <!-- services section start -->
 
-    <section class="service-section">
-      <h6>Services</h6>
-      <div class="service-section-items">
-        <div class="service-section-items-top">
-          <div class="service-items-white">
-            <img
-              src="images/service-section/construction.svg"
-              alt="construction"
-            />
-            <span>Construction</span>
-          </div>
-          <div class="service-items-blue">
-            <img src="images/service-section/renovation.svg" alt="renovation" />
-            <span>Renovation</span>
-          </div>
-          <div class="service-items-white">
-            <img
-              src="images/service-section/consultation.svg"
-              alt="consultation"
-            />
-            <span>Constultation</span>
-          </div>
+  <section class="service-section">
+    <h6>Services</h6>
+    <div class="service-section-items">
+      <div class="service-section-items-top">
+        <div class="service-items-white">
+          <img src="images/service-section/construction.svg" alt="construction" />
+          <span>Construction</span>
         </div>
-        <div class="service-section-items-bottom">
-          <div class="service-items-blue">
-            <img
-              src="images/service-section/repair.svg"
-              alt="repair-services"
-            />
-            <span>Repair-Service</span>
-          </div>
-          <div class="service-items-white">
-            <img
-              src="images/service-section/architecture.svg"
-              alt="architecture"
-            />
-            <span>Architecture</span>
-          </div>
-          <div class="service-items-blue">
-            <img src="images/service-section/electric.svg" alt="electric" />
-            <span>Electric</span>
-          </div>
+        <div class="service-items-blue">
+          <img src="images/service-section/renovation.svg" alt="renovation" />
+          <span>Renovation</span>
+        </div>
+        <div class="service-items-white">
+          <img src="images/service-section/consultation.svg" alt="consultation" />
+          <span>Constultation</span>
         </div>
       </div>
-    </section>
-
-    <!-- service section end -->
-
-    <!-- experience section start -->
-
-    <section class="experience-section">
-      <div class="experience-section-left">
-        <div class="project-completed">
-          <h5>123</h5>
-          <p class="left-content">Project Completed</p>
+      <div class="service-section-items-bottom">
+        <div class="service-items-blue">
+          <img src="images/service-section/repair.svg" alt="repair-services" />
+          <span>Repair-Service</span>
         </div>
-        <div class="happy-clients">
-          <h5>84</h5>
-          <p class="left-content">Happy Clients</p>
+        <div class="service-items-white">
+          <img src="images/service-section/architecture.svg" alt="architecture" />
+          <span>Architecture</span>
         </div>
-        <div class="business-years">
-          <h5>30</h5>
-          <p class="left-content">Business Year</p>
-        </div>
-        <div class="awards-win">
-          <h5>37</h5>
-          <p class="left-content">Awards Win</p>
-        </div>
-        <img
-          src="images\experience_section\project-completed.svg"
-          alt="project completed"
-          class="project-completed-image"
-        />
-        <img
-          src="images\experience_section\happy-clients.svg"
-          alt="hand"
-          class="handshake"
-        />
-        <img
-          src="images\experience_section\years.svg"
-          alt="business year"
-          class="business-year-image"
-        />
-        <img
-          src="images\experience_section\award.svg"
-          alt="awards"
-          class="awards"
-        />
-      </div>
-      <div class="experience-section-right">
-        <h3>30 Years Experience</h3>
-        <p>
-          Our company has been the leading provided construction services to
-          clients throughout the USA since 1988
-        </p>
-        <button class="form-button">Contact Us</button>
-      </div>
-    </section>
-
-    <!-- experience section end -->
-
-    <!-- addvertisment section start -->
-
-    <section class="advertisment-section">
-      <div class="advertisment-section-content">
-        <h6>Free consultation with exceptional quality</h6>
-        <p>Just one call away: <u>+84 1102 2703</u></p>
-      </div>
-      <div class="advertisment-section-button">
-        <button>Get your consultation</button>
-      </div>
-    </section>
-
-    <!-- advertisment section end -->
-
-    <!-- project section start -->
-    <section class="project-section">
-      <div class="project-section-left">
-        <h6>Projects</h6>
-        <ul class="project-left-content">
-          <li id="selected-project">All</li>
-          <li>Commercial</li>
-          <li>Residential</li>
-          <li>Other</li>
-        </ul>
-      </div>
-      <div class="project-section-right">
-        <div class="project-section-right-top">
-          <div>
-            <img src="images/projects_section/wildstone.svg" alt="building" />
-            <div class="project-right-content">
-              <h6>Wildstone Infra Hotel</h6>
-              <p>2715 Ash Dr. San Jose, South Dakota</p>
-            </div>
-          </div>
-          <div>
-            <img
-              src="images/projects_section/stone-building.svg"
-              alt="building"
-            />
-            <div class="project-right-content">
-              <h6>Wish Stone Building</h6>
-              <p>2972 Westheimer Rd. Santa Ana, Illinois</p>
-            </div>
-          </div>
-        </div>
-        <div class="project-section-right-bottom">
-          <div>
-            <img src="images/projects_section/parkinston.svg" alt="building" />
-            <div class="project-right-content">
-              <h6>Mr. Parkinston’s House</h6>
-              <p>3517 W. Gray St. Utica, Pennsylvania</p>
-            </div>
-          </div>
-          <div>
-            <img src="images/projects_section/oregano.svg" alt="building" />
-            <div class="project-right-content">
-              <h6>Oregano Height</h6>
-              <p>2464 Royal Ln. Mesa, New Jersey</p>
-            </div>
-          </div>
+        <div class="service-items-blue">
+          <img src="images/service-section/electric.svg" alt="electric" />
+          <span>Electric</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- project section end -->
+  <!-- services section end -->
 
-    <!-- form section start -->
+  <!-- experience section start -->
 
-    <section class="form-section">
-      <h6>What can us do for you?</h6>
+  <section class="experience-section">
+    <div class="experience-section-left">
+      <div class="project-completed">
+        <h5>123</h5>
+        <p class="left-content">Project Completed</p>
+      </div>
+      <div class="happy-clients">
+        <h5>84</h5>
+        <p class="left-content">Happy Clients</p>
+      </div>
+      <div class="business-years">
+        <h5>30</h5>
+        <p class="left-content">Business Year</p>
+      </div>
+      <div class="awards-win">
+        <h5>37</h5>
+        <p class="left-content">Awards Win</p>
+      </div>
+      <img src="images\experience_section\project-completed.svg" alt="project completed"
+        class="project-completed-image" />
+      <img src="images\experience_section\happy-clients.svg" alt="hand" class="handshake" />
+      <img src="images\experience_section\years.svg" alt="business year" class="business-year-image" />
+      <img src="images\experience_section\award.svg" alt="awards" class="awards" />
+    </div>
+    <div class="experience-section-right">
+      <h3>30 Years Experience</h3>
       <p>
-        We are ready to work on a project of any complexity, whether it's
-        commercial or residential.
+        Our company has been the leading provided construction services to
+        clients throughout the USA since 1988
       </p>
-      <form action="submit" class="form-feild">
+      <button class="experience-button">Contact Us</button>
+    </div>
+  </section>
+
+  <!-- experience section end -->
+
+  <!-- addvertisment section start -->
+
+  <section class="advertisment-section">
+    <div class="advertisment-section-content">
+      <h6>Free consultation with exceptional quality</h6>
+      <p>Just one call away: <u>+84 1102 2703</u></p>
+    </div>
+    <div class="advertisment-section-button">
+      <button>Get your consultation</button>
+    </div>
+  </section>
+
+  <!-- advertisment section end -->
+
+  <!-- project section start -->
+  <section class="project-section">
+    <div class="project-section-left">
+      <h6>Projects</h6>
+      <ul class="project-left-content">
+        <li id="selected-project"><b>All</b></li>
+        <li><b>Commercial</b></li>
+        <li><b>Residential</b></li>
+        <li><b>Other</b></li>
+      </ul>
+    </div>
+    <div class="project-section-right">
+      <div class="project-section-right-top">
         <div>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Email" required />
+          <img src="images/projects_section/wildstone.svg" alt="building" />
+          <div class="project-right-content">
+            <h6>Wildstone Infra Hotel</h6>
+            <p>2715 Ash Dr. San Jose, South Dakota</p>
+          </div>
         </div>
         <div>
-          <select>
-            <option value="issue" disabled selected>
-              Reason for contacting
-            </option>
-            <option value="one">website issue</option>
-            <option value="two">payment issue issue</option>
-          </select>
-          <input type="number" placeholder="Phone" />
+          <img src="images/projects_section/stone-building.svg" alt="building" />
+          <div class="project-right-content">
+            <h6>Wish Stone Building</h6>
+            <p>2972 Westheimer Rd. Santa Ana, Illinois</p>
+          </div>
         </div>
-        <textarea cols="30" rows="5" placeholder="Message"></textarea>
-        <button class="form-button">Submit</button>
-      </form>
-    </section>
+      </div>
+      <div class="project-section-right-bottom">
+        <div>
+          <img src="images/projects_section/parkinston.svg" alt="building" />
+          <div class="project-right-content">
+            <h6>Mr. Parkinston's House</h6>
+            <p>3517 W. Gray St. Utica, Pennsylvania</p>
+          </div>
+        </div>
+        <div>
+          <img src="images/projects_section/oregano.svg" alt="building" />
+          <div class="project-right-content">
+            <h6>Oregano Height</h6>
+            <p>2464 Royal Ln. Mesa, New Jersey</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- form section end -->
+  <!-- project section end -->
 
-    <!-- bottom details section -->
+  <!-- form section start -->
 
-    <section class="bottom-section">
+  <section class="form-section">
+    <h6>What can us do for you?</h6>
+    <p>
+      We are ready to work on a project of any complexity, whether it's
+      commercial or residential.
+    </p>
+    <form action="submit" class="form-feild">
+      <div>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email" required />
+      </div>
+      <div>
+        <select>
+          <option value="issue" disabled selected>
+            Reason for contacting
+          </option>
+          <option value="one">website issue</option>
+          <option value="two">payment issue issue</option>
+        </select>
+        <input type="number" placeholder="Phone" />
+      </div>
+      <textarea cols="30" rows="5" placeholder="Message"></textarea>
+      <button class="form-button">Submit</button>
+    </form>
+  </section>
+
+  <!-- form section end -->
+
+  <!-- bottom details section -->
+  <section class="bottom-section">
+    <div>
       <div class="bottom-section-left">
         <div>
-          <div>
+          <div class="bold-text">
             <span class="bottom-blue-text">ADDRESS :</span>
             <span class="bottom-blue-text">PHONE :</span>
             <span class="bottom-blue-text">EMAIL:</span>
@@ -334,7 +310,7 @@
           <div><i>The</i> Box</div>
         </a>
       </div>
-      <div class="bottom-section-right">
+      <div class="bottom-section-right bold-text">
         <div class="bottom-blue-text">NEWSLETTER :</div>
         <div class="email">
           <input type="email" placeholder="Email" />
@@ -347,15 +323,19 @@
           <a href="#"><img src="images/logos/twitter.svg" alt="twitter" /></a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- bottom section end -->
 
-    <!-- bottom section end -->
+  <!-- footer section start -->
 
-    <!-- footer section start -->
-
-    <section class="footer-section">
+  <section class="footer-section">
+    <div>
       <span>TheBox Company © 2022. All Rights Reserved</span>
-    </section>
-    <!-- footer section end -->
-  </body>
+    </div>
+  </section>
+
+  <!-- footer section end -->
+</body>
+
 </html>
