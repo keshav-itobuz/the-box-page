@@ -20,18 +20,26 @@ button {
 
 button:hover {
   cursor: pointer;
+  scale: 1.04;
 }
 ul {
   list-style: none;
 }
+li {
+  font-weight: bold;
+}
 
 /* navbar section start */
+.navbar {
+  padding: 10px 0;
+}
 
 .navbar > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 85%;
+  margin: auto;
 }
 
 .nav-menu {
@@ -57,11 +65,6 @@ ul {
   margin-top: 10px;
   font-size: 20px;
 }
-.navbar {
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-}
 
 /* navbar section end */
 
@@ -71,15 +74,16 @@ h1 {
   font-weight: 600;
   max-width: 400px;
   position: absolute;
-  bottom: 35%;
-  left: 0%;
+  bottom: 36%;
 }
 .hero-section {
   background-image: url("images/hero_section/hero.svg");
   background-size: cover;
-  height: 100vh;
+  height: 91.3vh;
   background-position: center;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-section-dialogbox {
@@ -87,7 +91,6 @@ h1 {
   max-width: 400px;
   position: absolute;
   bottom: 0%;
-  right: 0%;
   padding-top: 20px;
   text-align: center;
   color: white;
@@ -98,8 +101,9 @@ h1 {
   flex-direction: row;
   gap: 0.8px;
   justify-content: center;
+  background-color: white;
 }
-.button {
+.hero-button {
   display: flex;
   flex-direction: row;
   font-size: 10px;
@@ -111,6 +115,7 @@ h1 {
   color: white;
   font-size: 18px;
   font-weight: 400;
+  border-radius: 0px;
 }
 
 .hero-section-dialogbox-content > h6 {
@@ -147,7 +152,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .reputation-section {
   display: flex;
@@ -159,7 +164,8 @@ h1 {
   border: 1px solid grey;
   border-radius: 4px;
   margin-bottom: 10px;
-  padding: 10px 10px 30px 15px;
+  padding: 10px 10px 30px 10px;
+  max-width: fit-content;
 }
 
 .reputation-section-content > div > p {
@@ -227,7 +233,6 @@ h1 {
 
 .service-section {
   text-align: center;
-  margin-bottom: 50px;
   background: #f6f8f7;
   padding-bottom: 50px;
 }
@@ -275,46 +280,38 @@ h1 {
 /* service section end */
 
 /* experince section start */
-
 .experience-section {
-  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.experience-section-left > div {
-  padding: 10px 100px 30px 30px;
-  border-radius: 4px;
-  background: #fff;
-  margin: 20px 0px;
-  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05),
-    0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+.experience-card {
+  max-width: 300px;
 }
 
 .experience-section-right {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top: 50px;
-  padding: 0 70px;
+  width: 100%;
+  gap: 50px;
 }
 
-.experience-section-right > h3 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #2947a9;
+.experience-section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
 }
 
-.experience-section-right > p {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.experience-section-right > button {
-  width: 150px;
-}
-
-h5 {
-  font-size: 2rem;
-  font-weight: 600;
+.experience-section-left > div {
+  padding: 20px;
+  border-radius: 4px;
+  background: #fff;
+  margin: 20px 0px;
+  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05),
+    0px 12px 16px -4px rgba(17, 24, 39, 0.1);
 }
 
 .left-content {
@@ -325,9 +322,32 @@ h5 {
   margin-left: 15px;
 }
 
-.experience-section-left {
-  position: relative;
-  margin: 50px;
+.experience-button {
+  padding: 10px 30px;
+  color: white;
+  background-color: #2947a9;
+}
+
+h5 {
+  font-size: 52px;
+}
+
+.experience-section-right > h3 {
+  font-size: 40px;
+}
+
+.experience-section-right > p {
+  font-size: 20px;
+}
+
+.experience-section-right > button {
+  width: 150px;
+}
+
+.left-content {
+  font-weight: 400;
+  border-left: 7px solid #f9995d;
+  font-size: 16px;
 }
 
 .project-completed-image {
@@ -346,15 +366,6 @@ h5 {
   display: none;
 }
 
-.experience-section {
-  margin-bottom: 50px;
-}
-.experience-button {
-  padding: 10px 30px;
-  color: white;
-  background-color: #2947a9;
-}
-
 /* experience section end */
 
 /* advertisment section start */
@@ -362,10 +373,11 @@ h5 {
 .advertisment-section {
   background-image: url("./images/ads/advertisment.svg");
   background-size: cover;
-  height: 20vh;
+  height: 30vh;
   color: white;
   text-align: center;
-  margin: 50px 0;
+  margin: 20px 0 50px 0;
+  padding: 10% 0;
 }
 
 .advertisment-section-content,
@@ -400,9 +412,7 @@ h5 {
   font-weight: 400;
   font-size: 16px;
 }
-.advertisment-section {
-  padding: 10% 0;
-}
+
 /* advertisment section end */
 
 /* project section start */
@@ -465,7 +475,6 @@ h5 {
   justify-content: center;
   gap: 20px;
   overflow-x: scroll;
-  
 }
 .project-left-content::-webkit-scrollbar {
   display: none;
@@ -476,8 +485,8 @@ h5 {
   color: #2947a9;
 }
 .project-section-right-top > div > img,
-.project-section-right-bottom > div >img{
-  max-width:100%
+.project-section-right-bottom > div > img {
+  max-width: 100%;
 }
 /* project section end */
 
@@ -549,6 +558,7 @@ h5 {
   padding: 40px 0;
   margin: 0 20px;
   gap: 20px;
+  width: 80%;
 }
 
 .bottom-blue-text {
@@ -576,7 +586,7 @@ h5 {
 .bottom-section-left > div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
 }
 
@@ -619,19 +629,117 @@ h5 {
 }
 /* footer-section-end */
 
-/* ----------------------for tablet------------------ */
+/* ---------------------------------- */
 
-@media (min-width: 400px) {
+@media (min-width: 350px) {
   .form-feild textarea {
     width: 335px;
   }
+}
+
+/* ----------------------for tablet------------------ */
+
+@media (min-width: 500px) {
+  /* reputation section start  */
+
+  .reputation-section-content > div {
+    max-width: 500px;
+    width: 350px;
+  }
+  .reputation-section-content > div > p {
+    width: 100%;
+  }
+
+  /* reputation section end */
+
+  /* experience section start */
+
+  .experience-card {
+    max-width: 300px;
+  }
+
+  .project-completed {
+    position: relative;
+    left: -80px;
+    bottom: -20px;
+  }
+
+  .happy-clients {
+    right: -100px;
+    top: 80px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .awards-win {
+    position: relative;
+    right: -50px;
+    z-index: 5;
+    top: -20px;
+  }
+
+  .business-years {
+    left: -80px;
+    top: -90px;
+    position: relative;
+  }
+
+  .project-completed-image {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    height: 60px;
+    display: block;
+  }
+
+  .handshake {
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    height: 60px;
+    display: block;
+  }
+
+  .awards {
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    height: 60px;
+    display: block;
+  }
+
+  .business-year-image {
+    position: absolute;
+    bottom: -25px;
+    right: -30px;
+    height: 60px;
+    display: block;
+  }
+
+  /* experience section end */
+
   /* bottom section start */
+
+  .bottom-section > div {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+
+  .bottom-section-left,
+  .bottom-section-right {
+    font-size: 16px;
+  }
   .bottom-section {
+    display: flex;
+    justify-content: center;
     flex-direction: row;
   }
+
   .bottom-section-left > .nav-logo {
     display: flex;
   }
+
   /* bottom section end */
 }
 
@@ -664,11 +772,11 @@ h5 {
     right: 5%;
   }
   h1 {
-    font-size: 82px;
+    font-size: 72px;
     max-width: 600px;
-    bottom: 35%;
     left: 8%;
   }
+
   /* hero section end */
 
   /* reputation section start */
@@ -680,6 +788,12 @@ h5 {
     gap: 50px;
   }
 
+  .reputation-section-content > div {
+    width: 100%;
+  }
+  .reputation-section-content > div > p {
+    width: 250px;
+  }
   /*reputation section end  */
 
   /* about us section start */
@@ -743,115 +857,32 @@ h5 {
     padding-top: 30px;
   }
 
-  .service-items-blue > img:hover,
-  .service-items-white > img:hover {
-    height: 80px;
-    width: 80px;
+  .service-items-blue:hover,
+  .service-items-white:hover {
+    scale: 1.05;
   }
 
   /* service section hidden */
 
   /* experience section start */
 
-  .experience-section {
+  .experience-section > div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 50px 0;
-    gap: 400px;
+    align-items: center;
     position: relative;
-    height: 600px;
-    padding-top: 50px;
   }
-  h5 {
-    font-size: 72px;
-  }
-
-  .left-content {
-    font-size: 24px;
-  }
-  .experience-section-left > div {
-    padding: 10px 100px 30px 30px;
-  }
-
   .experience-section-right {
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 300px;
     gap: 50px;
-    padding: 0px;
-  }
-
-  .experience-section-right > h3 {
-    font-size: 60px;
-  }
-
-  .experience-section-right > p {
-    font-size: 20px;
-  }
-
-  .experience-section-right > button {
-    width: 150px;
   }
 
   .experience-section-left {
-    position: static;
-    margin: 0;
-  }
-  .left-content {
-    font-size: 24px;
-    font-weight: 400;
-    border-left: 7px solid #f9995d;
-    padding-left: 10px;
-    margin-left: 15px;
-  }
-
-  .project-completed {
-    position: absolute;
-    top: 150px;
-  }
-
-  .happy-clients {
-    position: absolute;
-    left: 440px;
-  }
-
-  .awards-win {
-    position: absolute;
-    top: 275px;
-    left: 400px;
-  }
-
-  .business-years {
-    position: absolute;
-    top: 375px;
-    left: 250px;
-  }
-
-  .project-completed-image {
-    position: absolute;
-    top: 110px;
-    left: 130px;
-    display: block;
-  }
-
-  .handshake {
-    position: absolute;
-    top: 30px;
-    left: 670px;
-    display: block;
-  }
-
-  .awards {
-    position: absolute;
-    top: 260px;
-    left: 620px;
-    display: block;
-  }
-
-  .business-year-image {
-    position: absolute;
-    top: 480px;
-    left: 530px;
-    display: block;
+    max-width: 350px;
   }
 
   /* experience section end */
@@ -864,7 +895,7 @@ h5 {
     justify-content: space-around;
     text-align: left;
     height: 200px;
-    margin: 50px 0 30px 0;
+    margin-bottom: 30px;
     padding: 0;
   }
 
@@ -898,7 +929,6 @@ h5 {
   .project-left-content > li {
     border: none;
     padding-left: 20px;
-    font-weight: 400;
     font-size: 18px;
   }
 
@@ -945,6 +975,10 @@ h5 {
     flex-direction: column;
     gap: 0px;
   }
+  .project-section-right > div > div:hover {
+    scale: 1.04;
+    cursor: pointer;
+  }
 
   /* project section end */
 
@@ -985,16 +1019,6 @@ h5 {
 
   /* bottom section start */
 
-  .bottom-section > div {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 20px;
-    width: 80%;
-  }
-  .bottom-section {
-    display: flex;
-    justify-content: center;
-  }
   .bottom-section-left > .nav-logo {
     display: flex;
   }
