@@ -491,6 +491,9 @@ h5 {
   font-weight: bold;
   font-size: 18px;
 }
+.project-section-buttons{
+  display: none;
+}
 
 .card {
   width: 300px;
