@@ -7,7 +7,6 @@
   font-family: "Work Sans", sans-serif;
 }
 
-
 a {
   color: black;
   text-decoration: none;
@@ -29,6 +28,7 @@ ul {
 li {
   font-weight: bold;
 }
+/* ---------------------------- */
 
 /* navbar section start */
 .navbar {
@@ -336,10 +336,12 @@ h5 {
 
 .experience-section-right > h3 {
   font-size: 40px;
+  color: #2947a9;
 }
 
 .experience-section-right > p {
   font-size: 20px;
+  color: #525b7a;
 }
 
 .experience-section-right > button {
@@ -436,7 +438,6 @@ h5 {
   color: #c2c7d6;
 }
 
-
 .project-left-content > li:hover {
   color: #2947a9;
   cursor: pointer;
@@ -490,10 +491,14 @@ h5 {
   font-weight: bold;
   font-size: 18px;
 }
-.project-section-right-top > div > img,
-.project-section-right-bottom > div > img {
-  max-width: 100%;
+
+.card {
+  width: 300px;
 }
+.card > img {
+  width: 300px;
+}
+
 /* project section end */
 
 /* form section start */
@@ -511,21 +516,27 @@ h5 {
 .form-feild {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
   margin-top: 10px;
 }
 
+.form-feild > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
 .form-feild > div > input {
-  width: 165px;
-  padding: 5px;
+  padding: 8px;
   outline: none;
 }
 
 .form-feild > textarea {
   padding: 10px;
   outline: none;
-  width: 165px;
+  width: 100%;
 }
 
 .form-section > h6 {
@@ -549,7 +560,6 @@ h5 {
 
 .form-feild > div > select {
   height: 35px;
-  width: 165px;
   outline: none;
 }
 
@@ -637,9 +647,12 @@ h5 {
 
 /* ---------------------------------- */
 
-@media (min-width: 350px) {
-  .form-feild textarea {
-    width: 335px;
+@media (min-width: 380px) {
+  .card {
+    width: 384px;
+  }
+  .card > img {
+    width: 384px;
   }
 }
 
@@ -723,6 +736,18 @@ h5 {
   }
 
   /* experience section end */
+
+  /* form section start */
+
+  .form-feild > div {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .form-feild > div > input {
+    width: 167px;
+  }
+
+  /* form section end */
 
   /* bottom section start */
 
@@ -834,13 +859,11 @@ h5 {
     flex-direction: column;
     gap: 50px;
   }
-
-  .service-section-items-top,
-  .service-section-items-bottom {
+  .service-section-items {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 80px;
   }
 
   .service-items-blue,
@@ -866,7 +889,7 @@ h5 {
 
   .service-items-blue:hover,
   .service-items-white:hover {
-    scale: 1.05;
+    scale: 1.08;
   }
 
   /* service section hidden */
@@ -887,7 +910,9 @@ h5 {
     max-width: 300px;
     gap: 50px;
   }
-
+  .experience-section-right > h3 {
+    font-size: 60px;
+  }
   .experience-section-left {
     max-width: 350px;
   }
@@ -948,8 +973,11 @@ h5 {
 
   .project-section-right {
     display: flex;
-    flex-direction: column;
-    margin-top: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-around;
+    width: 800px;
   }
 
   .project-right-content > h6 {
@@ -967,24 +995,32 @@ h5 {
   .project-right-content {
     background-color: #2947a9;
     color: white;
-    margin-top: -9px;
+    margin-top: -10px;
     padding: 10px 20px;
     margin-bottom: 20px;
-  }
-
-  .project-section-right-top,
-  .project-section-right-bottom {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
   }
   .project-left-content {
     flex-direction: column;
     gap: 0px;
   }
-  .project-section-right > div > div:hover {
-    scale: 1.04;
+  .card{
+    transition: all 0.6s ease-out;
+  }
+  .card:hover {
+    scale: 1.07;
     cursor: pointer;
+  }
+  .project-image {
+    width: 350px;
+  }
+  .project-section-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+  }
+  .project-section-buttons > button{
+    margin: 10px;
   }
 
   /* project section end */
@@ -1008,10 +1044,6 @@ h5 {
   .form-feild > div > select {
     height: 41px;
     width: 245px;
-  }
-
-  .form-feild > textarea {
-    width: 500px;
   }
 
   .form-section > h6 {
