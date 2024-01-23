@@ -370,6 +370,8 @@ h5 {
   display: none;
 }
 
+
+
 /* experience section end */
 
 /* advertisment section start */
@@ -491,15 +493,15 @@ h5 {
   font-weight: bold;
   font-size: 18px;
 }
-.project-section-buttons{
-  display: none;
-}
 
 .card {
   width: 300px;
 }
 .card > img {
   width: 300px;
+}
+.project-section-buttons{
+  display: none;
 }
 
 /* project section end */
@@ -975,7 +977,6 @@ h5 {
   }
 
   .project-section-right {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 50px;
